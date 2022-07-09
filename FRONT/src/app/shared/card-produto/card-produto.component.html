@@ -1,0 +1,20 @@
+<div class="card rounded margem shadow bg-white">
+  <!-- ESTRUTURA DO CARD -->
+  <img
+    [src]="foto"
+    class="card-img-top img img-area"
+  /><!-- IMG DENTRO DO CARD -->
+  <div class="card-body rounded">
+    <!-- CONTEÚDO DO CARD -->
+    <p class="card-text font">
+      {{ nomeProduto}}<!-- NOME DO PRODUTO -->
+      <br />
+    </p>
+    <br />
+  </div>
+
+  <h5 class="text-primary preco">{{ precoProduto | currency: "BRL" }}</h5>
+  <!-- PREÇO CARD -->
+</div>
+
+
